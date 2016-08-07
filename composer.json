@@ -32,7 +32,7 @@
 					"add": ["Hos\\Plugin\\Translator\\Events::addTranslation"],
 					"update": ["Hos\\Plugin\\Translator\\Events::updateTranslation"],
 					"remove": ["Hos\\Plugin\\Translator\\Events::removeTranslation"],
-					"getAll": ["Hos\\Plugin\\Translator\\Events::getAllTranslation"],
+					"getAll": ["Hos\\Plugin\\Translator\\Events::getAllTranslation"]
 				}
 			}
 		}
