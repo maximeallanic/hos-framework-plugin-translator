@@ -1,0 +1,40 @@
+{
+    "name": "hos/plugin-translator",
+    "description": "Translator Plugin Framework for Fast Developpement for PHP",
+    "keywords": [ "daehl", "hos", "framework", "translator" ],
+    "homepage": "https://github.com/daehl/hos-framework",
+    "type": "library",
+    "license": "CC0 1.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Maxime Allanic",
+            "email": "maxime.allanic@daehl.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Hos\\Plugin\\Translator\\": "src/"
+        }
+    },
+    "require": {
+    },
+		"events": {
+			"command": {
+				"translate": ["Hos\\Plugin\\Translator\\Events::translate"]
+			},
+			"language": {
+				"translate": ["Hos\\Plugin\\Translator\\Events::translate"],
+				"getAll": ["Hos\\Plugin\\Translator\\Events::getAll"],
+				"define": ["Hos\\Plugin\\Translator\\Events::define"],
+				"get": ["Hos\\Plugin\\Translator\\Events::get"],
+				"translation": {
+					"add": ["Hos\\Plugin\\Translator\\Events::addTranslation"],
+					"update": ["Hos\\Plugin\\Translator\\Events::updateTranslation"],
+					"remove": ["Hos\\Plugin\\Translator\\Events::removeTranslation"],
+					"getAll": ["Hos\\Plugin\\Translator\\Events::getAllTranslation"],
+				}
+			}
+		}
+
+}
